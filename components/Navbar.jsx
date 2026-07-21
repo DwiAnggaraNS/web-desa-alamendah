@@ -31,11 +31,10 @@ export default function Navbar() {
   return (
     <nav
       id="top-nav"
-      className={`fixed top-0 w-full z-50 transition-all duration-500 px-6 md:px-margin-desktop h-[72px] flex justify-between items-center left-0 right-0 ${
-        isScrolled || pathname === '/webgis'
+      className={`fixed top-0 w-full z-50 transition-all duration-500 px-6 md:px-margin-desktop h-[72px] flex justify-between items-center left-0 right-0 ${isScrolled || pathname === '/webgis'
           ? 'bg-white border-b border-outline-variant shadow-sm'
           : 'bg-transparent border-transparent'
-      }`}
+        }`}
     >
       <div className="flex items-center">
         <Link href="/">
@@ -50,11 +49,10 @@ export default function Navbar() {
           return (
             <Link key={link.name} href={link.path}>
               <span
-                className={`font-body-md text-body-md cursor-pointer transition-colors ${
-                  isActive
+                className={`font-body-md text-body-md cursor-pointer transition-colors ${isActive
                     ? 'text-primary border-b-2 border-error pb-1'
                     : 'text-secondary hover:text-primary'
-                }`}
+                  }`}
               >
                 {link.name}
               </span>
