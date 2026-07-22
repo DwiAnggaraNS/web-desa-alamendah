@@ -27,7 +27,7 @@ export default function LoginPage() {
       setError(signInError.message);
       setIsPending(false);
     } else {
-      router.push("/admin");
+      router.push("/admin/articles");
       router.refresh();
     }
   };
